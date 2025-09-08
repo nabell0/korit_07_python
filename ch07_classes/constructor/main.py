@@ -78,7 +78,7 @@ class USB:
         print('USB 객체가 생성되었습니다.')
         self.capacity = capacity
     def get_info(self):
-        print(f'P{self.capacity}GB USB')
+        print(f'{self.capacity}GB USB')
 usb = USB(64)
 usb.get_info()
 

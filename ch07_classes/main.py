@@ -50,7 +50,7 @@ class Person:
         self.tel = tel
         self.address = address
 
-    def show_info(self):                    # call1()
+    def show_info(self):   # call1()
         print(f'이름 :{self.name}')
         print(f'나이 :{self.age}')
         print(f'연락처 :{self.tel}')

@@ -120,8 +120,8 @@ vending_machine(3000)
 // : 몫 연산자 몫만 int로 가지고 오는 거 
 '''
 # 일단 메인에서 굴려보고 함수화시킴
-# my_money = 3000
-# drink_price = 700
+my_money = 3000
+drink_price = 700
 
 # #1 for 문으로 작성
 # change = my_money - (drink_price*음료개수)
@@ -137,12 +137,12 @@ vending_machine(3000)
 #     num += 1
 
 # 일단 for 문을 기준으로 함수화 시키겠습니다
-# def vending_machine(money):  # 이거 교재에 있는 무제 가지고 온건데 함수가 명사라는 점에서 별로 마음에 안듭니다.
-#     drink_price = 700
-#     for i in range(my_money // drink_price + 1):
-#         print(f'음료수 개수 = {i}개, 잔돈 = {my_money - (drink_price * i)}')
-#
-# vending_machine(3000)
+def vending_machine(money):  # 이거 교재에 있는 무제 가지고 온건데 함수가 명사라는 점에서 별로 마음에 안듭니다.
+    drink_price = 700
+    for i in range(my_money // drink_price + 1):
+        print(f'음료수 개수 = {i}개, 잔돈 = {my_money - (drink_price * i)}')
+
+vending_machine(3000)
 #
 # def vending_machine2(money):
 #     drink_price = 700
