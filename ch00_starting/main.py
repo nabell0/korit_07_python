@@ -57,7 +57,7 @@ console.log('안녕하세요, 제이름은 ${name}이고, 나이는 ${age}살입
 
 Java에서의 Scanner 같은 기능을 하는 함수 : input()
 '''
-name2 = input('이름을 입력하세요 >>>')
-print(name2)
+# name2 = input('이름을 입력하세요 >>>')
+# print(name2)
 
 
