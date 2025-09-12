@@ -207,7 +207,7 @@ class Shop:
     menu_dict = {
         '떡볶이': 3000,
         '순대': 4000,
-        '튀김': 5000,
+        '튀김': 500,
         '김밥': 2000,
     }
 
@@ -221,7 +221,7 @@ class Shop:
         for menu_dict in cls.menu_list:
             if menu_name in menu_dict:      # 딕셔너리 내에 pair 하나 밖에 없는 상태인데, 있으면 이하의 코드라인이 실행되고 아니면 넘어갈갑니다. 그러면 다음 반복으로 가겠네요.
                 # in -> element를 기준으로 해야 하기 때문에 dictionary의 element 중 'key'를 기준
-                # 애초에 key 없으면 valueㅓ를 조회 못하는게 dictionary의 특징 중 하나
+                # 애초에 key 없으면 value를 조회 못하는게 dictionary의 특징 중 하나
                 cls.total += menu_dict[menu_name]*quantity
                 print(f'{menu_name}를 {quantity}개 판매')
     @classmethod
